@@ -1,0 +1,64 @@
+.HamburgerMenu {
+  width: 300px;
+  height: 800px;
+  border: 1px solid rgb(228, 228, 228);
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  left: -300px;
+  transition: all 0.3s;
+}
+
+.showHamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  left: 0;
+}
+
+.content-up {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.content-up img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.content-up .text {
+  color: rgb(114, 114, 114);
+}
+
+.text b {
+  color: black;
+}
+
+.content-up .username {
+  cursor: pointer;
+}
+
+.content-down {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.content-down .buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .HamburgerMenu {
+    display: none;
+  }
+}

@@ -1,0 +1,60 @@
+.SideMenu {
+  width: 20%;
+  border-right: 1px solid rgb(216, 216, 216);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 60px;
+}
+
+.SideMenu .logo {
+  width: 60px;
+  cursor: pointer;
+}
+
+.SideMenu img {
+  width: 20px;
+}
+
+.SideMenu .home,
+.explore,
+.notification,
+.messages {
+  display: flex;
+  gap: 10px;
+}
+
+.explore-icon {
+  font-size: 20px;
+  color: #03a9f4;
+}
+
+.home .home-text,
+.explore-text,
+.notification-text,
+.messages-text {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+
+.SideMenu .button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.button .btn {
+  padding: 6px 60px;
+  background-color: #03a9f4;
+  border: 0;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .SideMenu {
+    display: none;
+  }
+}

@@ -1,0 +1,25 @@
+.TrendItem {
+  width: 100%;
+  padding: 15px;
+}
+
+.TrendItem .up-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.up-section .country {
+  font-size: 15px;
+  color: rgb(138, 138, 138);
+}
+
+.TrendItem .title {
+  color: rgb(33, 33, 33);
+  cursor: pointer;
+}
+
+.TrendItem .tweet {
+  font-size: 15px;
+  color: rgb(138, 138, 138);
+}

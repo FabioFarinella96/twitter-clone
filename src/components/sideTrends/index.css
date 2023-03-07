@@ -1,0 +1,10 @@
+.SideTrends {
+  width: 30%;
+  border-left: 1px solid rgb(224, 224, 224);
+}
+
+@media screen and (max-width: 992px) {
+  .SideTrends {
+    display: none;
+  }
+}
