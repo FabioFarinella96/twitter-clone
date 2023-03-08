@@ -4,10 +4,10 @@ import { VscListSelection } from "react-icons/Vsc";
 
 const HamburgerMenu = ({ showHamburger }) => {
   return (
-    <div className={`HamburgerMenu ${showHamburger ? "showHamburger" : ""}`}>
+    <div className={`HamburgerMenu ${showHamburger && "showHamburger"}`}>
       <div className="content-up">
         <img
-          src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairTheCaesar&accessoriesType=Sunglasses&hairColor=Red&facialHairType=Blank&facialHairColor=Black&clotheType=Hoodie&clotheColor=Blue02&eyeType=Close&eyebrowType=UpDownNatural&mouthType=Default&skinColor=Tanned"
+          src="https://robohash.org/facilisdignissimosdolore.png"
           alt="profile icon"
         />
         <h3 className="username">Bret</h3>

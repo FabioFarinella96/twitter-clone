@@ -1,35 +1,42 @@
 import "./index.css";
+import { useState, useEffect } from "react";
+import { FaRegComment, FaArrowsAltH, FaShareSquare } from "react-icons/Fa";
+import { BiHeart } from "react-icons/Bi";
 
-const MessageItem = ({ messageData }) => {
-  const { username, message, image } = messageData;
+const MessageItem = ({ dataPosts }) => {
+  const { userId, body } = dataPosts;
+
+  const [dataUser, setDataUser] = useState({});
+
+  useEffect(() => {
+    fetch(`https://dummyjson.com/users/${userId}`)
+      .then((res) => res.json())
+      .then((data) => setDataUser(data));
+  }, []);
 
   return (
     <div className="MessageItem">
       <div className="image-container">
-        <img className="image" src={image} alt={username} />
+        <img className="image" src={dataUser.image} alt={dataUser.username} />
       </div>
       <div className="content">
         <div className="up-content">
-          <h3 className="username">{username}</h3>
-          <p className="message">{message}</p>
+          <h3 className="username">{dataUser.username}</h3>
+          <p className="message">{body}</p>
         </div>
         <div className="down-content">
-          <img
-            src="https://img.icons8.com/ios/256/speech-bubble--v1.png"
-            alt="home-icon"
-          />
-          <img
-            src="https://img.icons8.com/ios-filled/256/u-turn-to-left.png"
-            alt="home-icon"
-          />
-          <img
-            src="https://img.icons8.com/material-outlined/256/hearts.png"
-            alt="home-icon"
-          />
-          <img
-            src="https://img.icons8.com/material-outlined/256/downloads.png"
-            alt="home-icon"
-          />
+          <div>
+            <FaRegComment />
+          </div>
+          <div>
+            <FaArrowsAltH />
+          </div>
+          <div>
+            <BiHeart className="heart-icon" />
+          </div>
+          <div>
+            <FaShareSquare />
+          </div>
         </div>
       </div>
     </div>

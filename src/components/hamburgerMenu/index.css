@@ -27,6 +27,8 @@
 
 .content-up img {
   width: 50px;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 50%;
   cursor: pointer;
 }
 

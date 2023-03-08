@@ -5,6 +5,8 @@ import {
   BiNotification,
   BiMessageSquareDetail,
 } from "react-icons/Bi";
+import { BsBookmarkStar, BsCardList } from "react-icons/Bs";
+import { CgMoreO } from "react-icons/Cg";
 
 const SideMenu = () => {
   return (
@@ -14,7 +16,6 @@ const SideMenu = () => {
         src="https://img.icons8.com/color/256/twitter.png"
         alt="twitter-icon"
       />
-
       <div className="home">
         <div className="explore-icon">
           <BiHomeAlt2 />
@@ -45,6 +46,38 @@ const SideMenu = () => {
         </div>
         <a href="#" className="messages-text">
           Messages
+        </a>
+      </div>
+      <div className="messages">
+        <div className="explore-icon">
+          <BsBookmarkStar />
+        </div>
+        <a href="#" className="messages-text">
+          Bookmarks
+        </a>
+      </div>
+      <div className="messages">
+        <div className="explore-icon">
+          <BsCardList />
+        </div>
+        <a href="#" className="messages-text">
+          Lists
+        </a>
+      </div>
+      <div className="messages">
+        <div className="explore-icon">
+          <img src="https://robohash.org/facilisdignissimosdolore.png" alt="" />
+        </div>
+        <a href="#" className="messages-text">
+          Profile
+        </a>
+      </div>
+      <div className="messages">
+        <div className="explore-icon">
+          <CgMoreO />
+        </div>
+        <a href="#" className="messages-text">
+          More
         </a>
       </div>
       <div className="button">

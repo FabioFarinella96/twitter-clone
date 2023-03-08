@@ -29,6 +29,12 @@
   color: #03a9f4;
 }
 
+.explore-icon img {
+  width: 20px;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 50%;
+}
+
 .home .home-text,
 .explore-text,
 .notification-text,
@@ -45,11 +51,13 @@
 }
 
 .button .btn {
-  padding: 6px 60px;
+  font-size: 15px;
   background-color: #03a9f4;
   border: 0;
-  border-radius: 12px;
-  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  padding: 12px 50px;
+  border-radius: 20px;
   cursor: pointer;
 }
 

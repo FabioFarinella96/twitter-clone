@@ -1,5 +1,8 @@
 import "./index.css";
 import { HiOutlineSparkles } from "react-icons/Hi";
+import { BsImages } from "react-icons/Bs";
+import { AiOutlineFileGif } from "react-icons/Ai";
+import { DiGoogleAnalytics } from "react-icons/Di";
 import HamburgerMenu from "../hamburgerMenu";
 import { useState } from "react";
 
@@ -33,7 +36,7 @@ const Header = () => {
         <div className="downHeader">
           <img
             className="profile-icon"
-            src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairTheCaesar&accessoriesType=Sunglasses&hairColor=Red&facialHairType=Blank&facialHairColor=Black&clotheType=Hoodie&clotheColor=Blue02&eyeType=Close&eyebrowType=UpDownNatural&mouthType=Default&skinColor=Tanned"
+            src="https://robohash.org/facilisdignissimosdolore.png"
             alt="profile icon"
           />
           <input
@@ -41,12 +44,10 @@ const Header = () => {
             type="text"
             placeholder="What's happening?"
           />
-          <img src="https://img.icons8.com/fluency/256/image.png" alt="icon" />
-          <img src="https://img.icons8.com/arcade/256/gif.png" alt="icon" />
-          <img
-            src="https://img.icons8.com/color/256/combo-chart.png"
-            alt="icon"
-          />
+          <button className="button">Tweet</button>
+          <BsImages className="header-icons" />
+          <AiOutlineFileGif className="header-icons" />
+          <DiGoogleAnalytics className="header-icons" />
         </div>
       </div>
     </div>
