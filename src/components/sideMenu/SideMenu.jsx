@@ -5,10 +5,15 @@ import {
   BiNotification,
   BiMessageSquareDetail,
 } from "react-icons/Bi";
-import { BsBookmarkStar, BsCardList } from "react-icons/Bs";
+import {
+  BsBookmarkStar,
+  BsCardList,
+  BsMoonStarsFill,
+  BsSun,
+} from "react-icons/Bs";
 import { CgMoreO } from "react-icons/Cg";
 
-const SideMenu = () => {
+const SideMenu = ({ darkMode, setDarkMode }) => {
   return (
     <div className="SideMenu">
       <img
@@ -20,65 +25,67 @@ const SideMenu = () => {
         <div className="explore-icon">
           <BiHomeAlt2 />
         </div>
-        <a href="#" className="home-text">
-          Home
-        </a>
+        <p className="home-text">Home</p>
       </div>
       <div className="explore">
         <div className="explore-icon">
           <BiHash />
         </div>
-        <a href="#" className="explore-text">
-          Explore
-        </a>
+        <p className="explore-text">Explore</p>
       </div>
       <div className="notification">
         <div className="explore-icon">
           <BiNotification />
         </div>
-        <a href="#" className="notification-text">
-          Notification
-        </a>
+        <p className="notification-text">Notification</p>
       </div>
       <div className="messages">
         <div className="explore-icon">
           <BiMessageSquareDetail />
         </div>
-        <a href="#" className="messages-text">
-          Messages
-        </a>
+        <p className="messages-text">Messages</p>
       </div>
       <div className="messages">
         <div className="explore-icon">
           <BsBookmarkStar />
         </div>
-        <a href="#" className="messages-text">
-          Bookmarks
-        </a>
+        <p className="messages-text">Bookmarks</p>
       </div>
       <div className="messages">
         <div className="explore-icon">
           <BsCardList />
         </div>
-        <a href="#" className="messages-text">
-          Lists
-        </a>
+        <p className="messages-text">Lists</p>
+      </div>
+      <div className="messages">
+        <p
+          className="messages-text"
+          onClick={() => setDarkMode((prev) => !prev)}
+        >
+          {darkMode ? (
+            <p className="sun">
+              <BsSun className="sun" />
+              Light mode
+            </p>
+          ) : (
+            <p className="moon">
+              <BsMoonStarsFill className="moon" />
+              Dark mode
+            </p>
+          )}
+        </p>
       </div>
       <div className="messages">
         <div className="explore-icon">
           <img src="https://robohash.org/facilisdignissimosdolore.png" alt="" />
         </div>
-        <a href="#" className="messages-text">
-          Profile
-        </a>
+        <p className="messages-text"> Profile</p>
       </div>
       <div className="messages">
         <div className="explore-icon">
           <CgMoreO />
         </div>
-        <a href="#" className="messages-text">
-          More
-        </a>
+        <p className="messages-text">More</p>
       </div>
       <div className="button">
         <button className="btn">Tweet</button>

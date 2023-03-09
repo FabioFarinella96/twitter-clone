@@ -4,3 +4,8 @@
   padding: 0;
   display: flex;
 }
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}

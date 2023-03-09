@@ -1,11 +1,14 @@
 .Header {
   width: 100%;
-  height: 100px;
+  height: 125px;
   display: flex;
+  background-color: rgba(255, 255, 255, 0.916);
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 15px 15px;
+  position: sticky;
+  top: 0;
 }
 
 .Header .upHeader {
@@ -24,13 +27,16 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  display: none;
 }
 
 .downHeader .profile-icon {
   width: 45px;
-  border: 1px solid rgb(208, 208, 208);
+  border: 1px solid rgb(202, 202, 202);
   border-radius: 50%;
+}
+
+.upHeader .home {
+  color: rgb(30, 30, 30);
 }
 
 .downHeader img {
@@ -41,7 +47,7 @@
   width: 800px;
   padding: 13px 12px;
   font-size: 15px;
-  background-color: rgb(244, 244, 244);
+  background-color: rgb(255, 255, 255);
   border: 1px solid rgb(238, 238, 238);
   border-radius: 20px;
   outline: none;
@@ -76,7 +82,7 @@
 
 .downHeader .header-icons {
   color: #03a9f4;
-  font-size: 22px;
+  font-size: 30px;
 }
 
 .Header .twitter-sparkling {

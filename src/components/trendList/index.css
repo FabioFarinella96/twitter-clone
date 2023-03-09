@@ -1,7 +1,5 @@
 .TrendList {
   width: 90%;
-  height: 100vh;
-  background-color: rgb(243, 243, 243);
   border-radius: 12px;
   margin: 15px auto;
 }

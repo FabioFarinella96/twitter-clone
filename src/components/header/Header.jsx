@@ -6,8 +6,10 @@ import { DiGoogleAnalytics } from "react-icons/Di";
 import HamburgerMenu from "../hamburgerMenu";
 import { useState } from "react";
 
-const Header = () => {
+const Header = ({ setHeaderInputValue }) => {
   const [showHamburger, setShowHamburger] = useState(false);
+
+  const [inputValue, setInputValue] = useState("");
 
   const toggleHamburger = () => {
     setShowHamburger(!showHamburger);
@@ -43,8 +45,16 @@ const Header = () => {
             className="input"
             type="text"
             placeholder="What's happening?"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            required
           />
-          <button className="button">Tweet</button>
+          <button
+            className="button"
+            onClick={() => setHeaderInputValue(inputValue)}
+          >
+            Tweet
+          </button>
           <BsImages className="header-icons" />
           <AiOutlineFileGif className="header-icons" />
           <DiGoogleAnalytics className="header-icons" />

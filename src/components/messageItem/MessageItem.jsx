@@ -1,7 +1,11 @@
 import "./index.css";
 import { useState, useEffect } from "react";
-import { FaRegComment, FaArrowsAltH, FaShareSquare } from "react-icons/Fa";
-import { BiHeart } from "react-icons/Bi";
+import {
+  FaRegComment,
+  FaArrowsAltH,
+  FaShareSquare,
+  FaRegHeart,
+} from "react-icons/Fa";
 
 const MessageItem = ({ dataPosts }) => {
   const { userId, body } = dataPosts;
@@ -32,7 +36,7 @@ const MessageItem = ({ dataPosts }) => {
             <FaArrowsAltH />
           </div>
           <div>
-            <BiHeart className="heart-icon" />
+            <FaRegHeart className="heart-icon" />
           </div>
           <div>
             <FaShareSquare />

@@ -4,7 +4,7 @@
   border: 1px solid rgb(228, 228, 228);
   background-color: white;
   position: absolute;
-  top: 60px;
+  top: 68px;
   left: -300px;
   transition: all 0.3s;
 }
@@ -47,6 +47,7 @@
 .content-down {
   display: flex;
   flex-direction: column;
+  color: black;
   border-bottom: 1px solid rgb(216, 216, 216);
   gap: 20px;
   padding: 30px 0;

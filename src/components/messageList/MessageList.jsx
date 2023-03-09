@@ -1,9 +1,8 @@
-// import messageList from "../../mock/messageList";
 import "./index.css";
 import MessageItem from "../../components/messageItem";
 import { useState, useEffect } from "react";
 
-const MessageList = () => {
+const MessageList = ({ headerInputValue }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -12,9 +11,12 @@ const MessageList = () => {
       .then((data) => setData(data.posts));
   }, []);
 
+  const filteredMessageList = () =>
+    data.filter((msg) => msg.body.includes(headerInputValue));
+
   return (
     <div className="MessageList">
-      {data.map((post) => (
+      {filteredMessageList().map((post) => (
         <MessageItem dataPosts={post} Key={post.id} />
       ))}
     </div>

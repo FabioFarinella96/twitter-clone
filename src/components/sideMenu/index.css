@@ -29,10 +29,22 @@
   color: #03a9f4;
 }
 
+.messages .dark {
+  font-size: 20px;
+}
+
 .explore-icon img {
-  width: 20px;
+  width: 28px;
   border: 1px solid rgb(182, 182, 182);
   border-radius: 50%;
+}
+
+.sun,
+.moon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
 }
 
 .home .home-text,
@@ -40,8 +52,9 @@
 .notification-text,
 .messages-text {
   text-decoration: none;
+  font-size: 18px;
   font-weight: 700;
-  color: black;
+  cursor: pointer;
 }
 
 .SideMenu .button {
