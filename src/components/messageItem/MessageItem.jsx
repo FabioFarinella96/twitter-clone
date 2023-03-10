@@ -2,12 +2,12 @@ import "./index.css";
 import { useState, useEffect } from "react";
 import {
   FaRegComment,
-  FaArrowsAltH,
+  FaEdit,
   FaShareSquare,
   FaRegHeart,
 } from "react-icons/Fa";
 
-const MessageItem = ({ dataPosts }) => {
+const MessageItem = ({ dataPosts, setEditMessage }) => {
   const { userId, body } = dataPosts;
 
   const [dataUser, setDataUser] = useState({});
@@ -17,6 +17,10 @@ const MessageItem = ({ dataPosts }) => {
       .then((res) => res.json())
       .then((data) => setDataUser(data));
   }, []);
+
+  const modifyMessage = () => {
+    setEditMessage(true);
+  };
 
   return (
     <div className="MessageItem">
@@ -30,16 +34,16 @@ const MessageItem = ({ dataPosts }) => {
         </div>
         <div className="down-content">
           <div>
-            <FaRegComment />
+            <FaRegComment className="down-content-icons" />
           </div>
           <div>
-            <FaArrowsAltH />
+            <FaEdit className="down-content-icons" onClick={modifyMessage} />
           </div>
           <div>
-            <FaRegHeart className="heart-icon" />
+            <FaRegHeart className="down-content-icons" />
           </div>
           <div>
-            <FaShareSquare />
+            <FaShareSquare className="down-content-icons" />
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import "./index.css";
 import MessageItem from "../../components/messageItem";
 import { useState, useEffect } from "react";
 
-const MessageList = ({ headerInputValue }) => {
+const MessageList = ({ headerInputValue, setEditMessage }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -17,7 +17,11 @@ const MessageList = ({ headerInputValue }) => {
   return (
     <div className="MessageList">
       {filteredMessageList().map((post) => (
-        <MessageItem dataPosts={post} Key={post.id} />
+        <MessageItem
+          dataPosts={post}
+          Key={post.id}
+          setEditMessage={setEditMessage}
+        />
       ))}
     </div>
   );
