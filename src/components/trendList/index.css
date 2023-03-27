@@ -37,4 +37,5 @@
 .title-section .settings-icon {
   color: #03a9f4;
   font-size: 20px;
+  cursor: pointer;
 }

@@ -58,7 +58,7 @@ const SideMenu = ({ darkMode, setDarkMode }) => {
         <p className="messages-text">Lists</p>
       </div>
       <div className="messages">
-        <p
+        <div
           className="messages-text"
           onClick={() => setDarkMode((prev) => !prev)}
         >
@@ -73,7 +73,7 @@ const SideMenu = ({ darkMode, setDarkMode }) => {
               Dark mode
             </p>
           )}
-        </p>
+        </div>
       </div>
       <div className="messages">
         <div className="explore-icon">

@@ -49,6 +49,24 @@
   cursor: pointer;
 }
 
+.down-content-icons:active {
+  color: rgb(57, 57, 57);
+}
+
+.down-content .likes-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.red-heart {
+  color: red;
+}
+
+.red-heart:active {
+  color: rgb(111, 0, 0);
+}
+
 @media screen and (max-width: 992px) {
   .up-content {
     width: 400px;

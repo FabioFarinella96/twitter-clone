@@ -1,6 +1,7 @@
 .Header {
   width: 100%;
   height: 125px;
+  background-color: rgba(9, 9, 9, 0.852);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,6 +18,12 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.upHeader .hamburgerIcon {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
 }
 
 .Header .downHeader {
@@ -64,6 +71,7 @@
 }
 
 .Header .hamburger-menu {
+  color: white;
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -93,11 +101,12 @@
   }
 
   .Header .home {
+    color: white;
     display: block;
     cursor: pointer;
   }
 
-  .Header .hamburger-menu {
+  .upHeader .hamburgerIcon {
     display: none;
   }
 

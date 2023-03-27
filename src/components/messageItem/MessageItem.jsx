@@ -1,16 +1,13 @@
 import "./index.css";
 import { useState, useEffect } from "react";
-import {
-  FaRegComment,
-  FaEdit,
-  FaShareSquare,
-  FaRegHeart,
-} from "react-icons/Fa";
+import { FaRegComment, FaEdit, FaShareSquare } from "react-icons/Fa";
+import { AiFillHeart } from "react-icons/Ai";
 
 const MessageItem = ({ dataPosts, setEditMessage }) => {
   const { userId, body } = dataPosts;
 
   const [dataUser, setDataUser] = useState({});
+  const [likes, setLikes] = useState(0);
 
   useEffect(() => {
     fetch(`https://dummyjson.com/users/${userId}`)
@@ -39,8 +36,12 @@ const MessageItem = ({ dataPosts, setEditMessage }) => {
           <div>
             <FaEdit className="down-content-icons" onClick={modifyMessage} />
           </div>
-          <div>
-            <FaRegHeart className="down-content-icons" />
+          <div className="likes-container">
+            <AiFillHeart
+              className={`down-content-icons ${likes && "red-heart"}`}
+              onClick={() => setLikes(likes + 1)}
+            />
+            <span>{likes}</span>
           </div>
           <div>
             <FaShareSquare className="down-content-icons" />

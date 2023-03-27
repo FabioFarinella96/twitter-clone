@@ -1,6 +1,7 @@
 import "./index.css";
 import { HiOutlineSparkles } from "react-icons/Hi";
 import { BsImages } from "react-icons/Bs";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineFileGif } from "react-icons/Ai";
 import { DiGoogleAnalytics } from "react-icons/Di";
 import HamburgerMenu from "../hamburgerMenu";
@@ -20,13 +21,7 @@ const Header = ({ setHeaderInputValue }) => {
       <HamburgerMenu showHamburger={showHamburger} />
       <div className="upHeader">
         <h2 className="home">Home</h2>
-        <img
-          className="hamburger-menu"
-          src="https://img.icons8.com/material-rounded/256/menu.png"
-          alt="header menu"
-          onClick={toggleHamburger}
-        />
-
+        <GiHamburgerMenu onClick={toggleHamburger} className="hamburgerIcon" />
         <img
           className="twitter-icon"
           src="https://img.icons8.com/color/256/twitter.png"

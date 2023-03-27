@@ -23,6 +23,10 @@
   cursor: pointer;
 }
 
+.button:hover {
+  transform: scale(1.3);
+}
+
 .ModifySection .modify-section-content {
   width: 400px;
   height: 500px;

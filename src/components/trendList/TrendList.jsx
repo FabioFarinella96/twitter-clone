@@ -17,8 +17,8 @@ const TrendList = () => {
         <h3 className="trend-title">Trends for you</h3>
         <FiSettings className="settings-icon" />
       </div>
-      {trendList.map((element, index) => (
-        <TrendItem data={element} key={index} />
+      {trendList.map((element) => (
+        <TrendItem data={element} key={element.id} />
       ))}
     </div>
   );

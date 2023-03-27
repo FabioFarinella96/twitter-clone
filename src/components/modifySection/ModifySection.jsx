@@ -4,7 +4,7 @@ import { useState } from "react";
 const ModifySection = ({ setEditMessage }) => {
   const [inputTitle, setInputTitle] = useState("");
   const [inputMessage, setInputMessage] = useState("");
-  const [inputUserId, setInputUserId] = useState(null);
+  const [inputUserId, setInputUserId] = useState("");
 
   const onHandleSubmit = (e) => {
     e.preventDefault();

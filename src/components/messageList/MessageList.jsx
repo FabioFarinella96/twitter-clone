@@ -16,10 +16,10 @@ const MessageList = ({ headerInputValue, setEditMessage }) => {
 
   return (
     <div className="MessageList">
-      {filteredMessageList().map((post) => (
+      {filteredMessageList().map((post, index) => (
         <MessageItem
+          key={index}
           dataPosts={post}
-          Key={post.id}
           setEditMessage={setEditMessage}
         />
       ))}
