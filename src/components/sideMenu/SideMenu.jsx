@@ -4,14 +4,14 @@ import {
   BiHomeAlt2,
   BiNotification,
   BiMessageSquareDetail,
-} from "react-icons/Bi";
+} from "react-icons/bi";
 import {
   BsBookmarkStar,
   BsCardList,
   BsMoonStarsFill,
   BsSun,
 } from "react-icons/Bs";
-import { CgMoreO } from "react-icons/Cg";
+import { CgMoreO } from "react-icons/bg";
 
 const SideMenu = ({ darkMode, setDarkMode }) => {
   return (
