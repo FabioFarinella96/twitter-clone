@@ -1,3 +1,3 @@
-import SideTrends from "./Sidetrends";
+import SideTrends from "./Sidetrends.jsx";
 
 export default SideTrends;
