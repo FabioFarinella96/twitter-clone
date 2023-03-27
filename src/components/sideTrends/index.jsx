@@ -1,3 +1,3 @@
-import SideTrends from "./sidetrends";
+import SideTrends from "./Sidetrends";
 
 export default SideTrends;
