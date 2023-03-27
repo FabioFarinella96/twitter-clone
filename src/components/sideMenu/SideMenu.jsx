@@ -10,7 +10,7 @@ import {
   BsCardList,
   BsMoonStarsFill,
   BsSun,
-} from "react-icons/Bs";
+} from "react-icons/bs";
 import { CgMoreO } from "react-icons/bg";
 
 const SideMenu = ({ darkMode, setDarkMode }) => {
