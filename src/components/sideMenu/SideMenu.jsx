@@ -1,10 +1,8 @@
 import "./index.css";
-import {
-  BiHash,
-  BiHomeAlt2,
-  BiNotification,
-  BiMessageSquareDetail,
-} from "react-icons/Bi";
+import { BiHash, BiMessageSquareDetail } from "react-icons/Bi";
+import { MdNotificationsActive } from "react-icons/Md";
+
+import { FaHome } from "react-icons/Fa";
 import {
   BsBookmarkStar,
   BsCardList,
@@ -23,7 +21,7 @@ const SideMenu = ({ darkMode, setDarkMode }) => {
       />
       <div className="home">
         <div className="explore-icon">
-          <BiHomeAlt2 />
+          <FaHome />
         </div>
         <p className="home-text">Home</p>
       </div>
@@ -35,7 +33,7 @@ const SideMenu = ({ darkMode, setDarkMode }) => {
       </div>
       <div className="notification">
         <div className="explore-icon">
-          <BiNotification />
+          <MdNotificationsActive />
         </div>
         <p className="notification-text">Notification</p>
       </div>
