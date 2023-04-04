@@ -1,14 +1,14 @@
 import "./index.css";
-import { FiMessageSquare } from "react-icons/Fi";
-import { MdNotificationsActive } from "react-icons/Md";
-import { FaHome, FaHashtag } from "react-icons/Fa";
+import { TbMessages } from "react-icons/tb";
+import { MdNotificationsActive } from "react-icons/md";
+import { FaHome, FaHashtag } from "react-icons/fa";
 import {
   BsBookmarkStar,
   BsCardList,
   BsMoonStarsFill,
   BsSun,
-} from "react-icons/Bs";
-import { CgMoreO } from "react-icons/Cg";
+} from "react-icons/bs";
+import { CgMoreO } from "react-icons/cg";
 
 const SideMenu = ({ darkMode, setDarkMode }) => {
   return (
@@ -38,7 +38,7 @@ const SideMenu = ({ darkMode, setDarkMode }) => {
       </div>
       <div className="messages">
         <div className="explore-icon">
-          <FiMessageSquare />
+          <TbMessages />
         </div>
         <p className="messages-text">Messages</p>
       </div>
