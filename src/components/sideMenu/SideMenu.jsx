@@ -1,14 +1,14 @@
 import "./index.css";
-import { TbMessages } from "react-icons/tb";
-import { MdNotificationsActive } from "react-icons/md";
-import { FaHome, FaHashtag } from "react-icons/fa";
+import { TbMessages } from "react-icons/Tb";
+import { MdNotificationsActive } from "react-icons/Md";
+import { FaHome, FaHashtag } from "react-icons/Fa";
 import {
   BsBookmarkStar,
   BsCardList,
   BsMoonStarsFill,
   BsSun,
-} from "react-icons/bs";
-import { CgMoreO } from "react-icons/cg";
+} from "react-icons/Bs";
+import { CgMoreO } from "react-icons/Cg";
 
 const SideMenu = ({ darkMode, setDarkMode }) => {
   return (
